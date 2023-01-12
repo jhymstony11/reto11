@@ -1,0 +1,7 @@
+<label>
+    Name:
+    <input type="text" [formControl]="name">
+</label>
+<p *ngIf="name && name.value">
+    Value: {{ name.value }}
+</p>
